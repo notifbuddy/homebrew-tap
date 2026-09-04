@@ -5,21 +5,21 @@
 class Notifbuddy < Formula
   desc "Two-way Linear <-> Slack sync, from your terminal"
   homepage "https://notifbuddy.com"
-  version "0.15.0"
+  version "0.16.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/notifbuddy/notifbuddy/releases/download/v0.15.0/notifbuddy_0.15.0_darwin_amd64.tar.gz"
-      sha256 "cb3fc44d457b56e0b3c8cabe2ff26dfb0c1382e05bee38619efcc938b8ac86a5"
+      url "https://github.com/notifbuddy/notifbuddy/releases/download/v0.16.0/notifbuddy_0.16.0_darwin_amd64.tar.gz"
+      sha256 "49fe1bfabc1a4e98fe5062f1ceb760cf856f38d77abfd30aaca8775b7f536555"
 
       define_method(:install) do
         bin.install "notifbuddy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/notifbuddy/notifbuddy/releases/download/v0.15.0/notifbuddy_0.15.0_darwin_arm64.tar.gz"
-      sha256 "114d21e647e4659a4c98e8982154fc6f50bde1776d1afbc5e3805aad8d327054"
+      url "https://github.com/notifbuddy/notifbuddy/releases/download/v0.16.0/notifbuddy_0.16.0_darwin_arm64.tar.gz"
+      sha256 "aa6646bc0a408a9b31320223357d67b6be90ee765baf46b626d9aba9d4661a5e"
 
       define_method(:install) do
         bin.install "notifbuddy"
@@ -29,15 +29,15 @@ class Notifbuddy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/notifbuddy/notifbuddy/releases/download/v0.15.0/notifbuddy_0.15.0_linux_amd64.tar.gz"
-      sha256 "268250b4790fb1451e00120639cbf01bdbf28295b80e122aa80a2b7a65cd779a"
+      url "https://github.com/notifbuddy/notifbuddy/releases/download/v0.16.0/notifbuddy_0.16.0_linux_amd64.tar.gz"
+      sha256 "a0ef55fc06a9db40b089ac2f75438f0f3574f8ef65b55acbb6a63b7712760b23"
       define_method(:install) do
         bin.install "notifbuddy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/notifbuddy/notifbuddy/releases/download/v0.15.0/notifbuddy_0.15.0_linux_arm64.tar.gz"
-      sha256 "19c09374162a0a9d7e63be1ff7c32bdcfb2bbf9c0749f26dc922408369527899"
+      url "https://github.com/notifbuddy/notifbuddy/releases/download/v0.16.0/notifbuddy_0.16.0_linux_arm64.tar.gz"
+      sha256 "015ef40a4496ff2513bdc79a182cf2ee258f1836b44b765afb4e46ba51bef4b0"
       define_method(:install) do
         bin.install "notifbuddy"
       end
